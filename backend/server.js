@@ -1,4 +1,5 @@
-require('dotenv').config();
+const dotenv = require('dotenv');
+dotenv.config();
 const express = require('express');
 const mongoose = require('mongoose');
 
@@ -15,7 +16,7 @@ app.use('/api/v1/emp', employeeRoutes);
 
 // Basic route
 app.get('/', (req, res) => {
-  res.send('Welcome to COMP3123 Assignment 1 API!');
+  res.send('Welcome to COMP3123 Assignment 2 API!');
 });
 
 // Connect to MongoDB (still pending)
